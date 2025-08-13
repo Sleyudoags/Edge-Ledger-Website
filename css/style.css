@@ -16,7 +16,8 @@ a {
 } 
 
 p{
-    margin: 0.75rem 0;
+    margin: 0 auto;
+    line-height: 1.4;
 }
 
 .container {
@@ -33,6 +34,16 @@ p{
 
 .text-primary {
     color: #007bff;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.bg-dark {
+    background-color: #343a40;
+    color: #fff;
 }
 
 .l-heading {
@@ -58,6 +69,10 @@ p{
 .py-2 { padding: 2rem 0;}
 .py-3 { padding: 3rem 0;}
 
+.p-1 { padding: 1.5rem;}
+.p-2 { padding: 2rem;}
+.p-3 { padding: 3rem;}
+
 .btn {
     display: inline-block;
     padding: 0.5rem 2rem;
@@ -75,6 +90,16 @@ p{
 .btn-dark {
     background-color: #343a40;
     color: #fff;
+}
+
+.list {
+    list-style: none;
+    margin: 0.5rem 0;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dotted #444;
 }
 
 #navbar {
@@ -124,6 +149,8 @@ p{
     position: absolute;
     top: 60px ;
     left: 0;
+    right: 0;
+    bottom: 0;
     background-color: rgba(0, 0,0 , 0.4)
 }
 
@@ -134,12 +161,41 @@ p{
 
 #what .items.item {
     flex: 1;
-    text-align: center;
+    text-align: center; 
     padding: 1rem;
 }
-
-#what .items .item .i {
+ 
+#what .items .item i {
     background: #007bff;
-    
+    padding: 3rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
 }
 
+
+/* Who we are */
+#who {
+    display: flex;
+    width: 100%;
+}
+
+#who div {
+    flex: 1;
+    padding: 2rem;
+}
+
+#who .who-img {
+    background: url(../img/people.jpg) no-repeat center center/cover;
+    min-height:100%;
+}
+
+/* clients */
+#clients .items {
+    display: flex;
+}
+
+#clients .items img {
+    display: block;
+    margin: auto;
+    width:60%;
+}
