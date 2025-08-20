@@ -172,7 +172,7 @@ p{
  
 #what .items .item i {
     background: #007bff;
-    /* padding: 2rem; */
+    padding: 2rem;
     border-radius: 50%;
     margin-bottom: 1rem;
     display: flex;
